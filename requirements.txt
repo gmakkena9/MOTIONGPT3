@@ -1,0 +1,33 @@
+# MotionGPT3 — Team 3
+# Run on Google Colab with T4 GPU (Runtime → Change runtime type → T4 GPU)
+# Install order matters — run pip cells in sequence, then restart runtime.
+
+# Core ML (Colab already has torch 2.2+)
+pytorch-lightning==2.2.5
+transformers>=4.36.0,<4.42.0
+tokenizers>=0.15.0
+
+# Config & utilities
+omegaconf
+einops
+rich
+tqdm
+scipy
+numpy
+
+# Rendering
+moviepy==1.0.3
+imageio
+imageio-ffmpeg
+matplotlib
+
+# Interactive UI (Gradio public link — expires after 24 hrs, re-run all cells to refresh)
+gradio>=3.50.0,<4.0.0
+
+# Downloader (Google Drive)
+gdown
+
+# NLP metrics
+bert-score
+spacy
+# After pip install, run: python -m spacy download en_core_web_sm
